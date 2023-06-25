@@ -20,3 +20,18 @@ NumpyBasic02
 최대, 최소, 합계, 평균값
 
 NumpyBasic03 (opencv 활용)
+- opencv 기본 사용법(이미지 읽어서 numpy객체 만들기, 새롭게 파일 저장해서 만들기, 색 변환)
+- 픽셀 수 및 이미지 크기 확인 // BGR 순서 RGB x
+- 특정 범위에 픽셀값 변경 // 슬라이싱의 중요성
+- ROI 추출 및 복사
+- 픽셀 별로 색상 다루기
+
+NumpyBasic04 (행렬 및 보간법 활용)
+- 이미지 크기 변경 #cv2.resize(image, dszie, fx, fy, interpolation)
+      크기 키우기: interpolation = cv2.INTER_CUBIC
+      크기 줄이기 : interpolation = cv2.INTER_AREA
+- 이미지 위치 변경 #cv2.warpAffine(image, M, dszie)
+      M : 변환행렬 참고
+![image](https://github.com/koojahyeob/Python_DataAnalysis-and-ImageProcessing/assets/70992152/8cc5ee34-bcb0-4b54-95eb-44b5de48c6c7)
+- 이미지 회전 #cv2.getRotationMatrix2D(center, angle, scale)
+![image](https://github.com/koojahyeob/Python_DataAnalysis-and-ImageProcessing/assets/70992152/e448c545-9d79-4788-8cbf-821f536259e8)
