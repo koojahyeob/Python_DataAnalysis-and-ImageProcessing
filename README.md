@@ -44,6 +44,7 @@ NumpyBasic06 (이미지 임계점 처리)
 - cv2.threshold(image, thresh, max_value, type) 형태
 ![image](https://github.com/koojahyeob/Python_DataAnalysis-and-ImageProcessing/assets/70992152/a5aeb0fa-d024-4261-9350-91974abfe9db)
 
+
 - 적응 임계점 처리 (하나의 이미지에 다수의 조명 상태 존재할 경우)
 - cv2.adaptiveThreshold(image, max_vallue, adaptive_method, type, block_size, C)
 - ADAPTIVE_tHRESH_MEAN_C : 5BY5로 쪼개서 모든 픽셀 값에 같은 가중치 곱해서 이미지 임계점 처리
