@@ -37,3 +37,15 @@ NumpyBasic04 (행렬 및 보간법 활용)
 ![image](https://github.com/koojahyeob/Python_DataAnalysis-and-ImageProcessing/assets/70992152/e448c545-9d79-4788-8cbf-821f536259e8)
 
 NumpyBasic05 (이미지 합치기) -> 겹쳐서 합치는 것
+- 두 개의 이미지를 서로 겹쳐서 합치는 형태
+- cv2.add()를 통해 Saturation 연산 수행
+
+NumpyBasic06 (이미지 임계점 처리) 
+- cv2.threshold(image, thresh, max_value, type) 형태
+![image](https://github.com/koojahyeob/Python_DataAnalysis-and-ImageProcessing/assets/70992152/a5aeb0fa-d024-4261-9350-91974abfe9db)
+
+- 적응 임계점 처리 (하나의 이미지에 다수의 조명 상태 존재할 경우)
+- cv2.adaptiveThreshold(image, max_vallue, adaptive_method, type, block_size, C)
+- ADAPTIVE_tHRESH_MEAN_C : 5BY5로 쪼개서 모든 픽셀 값에 같은 가중치 곱해서 이미지 임계점 처리
+- ADAPTVIE_THRESH_GAUSSIAN_C : 정규 분포 형태로 가운데 부분부터 멀어질 때 가중치는 점점 낮춰서 계산
+
