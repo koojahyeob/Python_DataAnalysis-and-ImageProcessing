@@ -35,3 +35,5 @@ NumpyBasic04 (행렬 및 보간법 활용)
 ![image](https://github.com/koojahyeob/Python_DataAnalysis-and-ImageProcessing/assets/70992152/8cc5ee34-bcb0-4b54-95eb-44b5de48c6c7)
 - 이미지 회전 #cv2.getRotationMatrix2D(center, angle, scale)
 ![image](https://github.com/koojahyeob/Python_DataAnalysis-and-ImageProcessing/assets/70992152/e448c545-9d79-4788-8cbf-821f536259e8)
+
+NumpyBasic05 (이미지 합치기) -> 겹쳐서 합치는 것
