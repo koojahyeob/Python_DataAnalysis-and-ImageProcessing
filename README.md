@@ -42,6 +42,7 @@ NumpyBasic05 (이미지 합치기) -> 겹쳐서 합치는 것
 
 NumpyBasic06 (이미지 임계점 처리) 
 - cv2.threshold(image, thresh, max_value, type) 형태
+
 ![image](https://github.com/koojahyeob/Python_DataAnalysis-and-ImageProcessing/assets/70992152/a5aeb0fa-d024-4261-9350-91974abfe9db)
 
 
