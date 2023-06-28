@@ -3,7 +3,7 @@
 # -> 0보다 작으면 0, 255보다 크면 255로 표현
 # case2 : np.add() : Modulo 연산 수행
 # -> 256은 0, 257은 1로 표현 Modulo는 나머지 의미 256%256 = 0 // 257%256 = 1
-
+# 따라서 np.add가 조금 더 부자연스럽게 나타남
 import cv2
 
 image_1 = cv2.imread('image_1.jpg')
