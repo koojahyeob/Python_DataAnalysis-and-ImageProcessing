@@ -6,7 +6,7 @@
 # max_value : 임계 값을 넘었을 때 적용할 값
 # type : 임계점을 처리하는 방식
 
-""" import cv2
+import cv2
 
 image = cv2.imread('grey.png', cv2.IMREAD_GRAYSCALE)
 
@@ -26,7 +26,7 @@ images.append(thres5)
 
 for i in images:
     cv2.imshow('Image', i)
-    cv2.waitKey(0) """
+    cv2.waitKey(0)
 "------------------------------------------------------------------------------------"
 
 # 이미지의 적응 임계점 처리
@@ -38,7 +38,7 @@ for i in images:
 # type : 임계점을 처리하는 방식 // block_size : 임계 값을 적용할 영역의 크기 // C : 평균이나 가중 평균에서 차감할 값
 
 
-""" import cv2
+import cv2
 image = cv2.imread('grey.png', cv2.IMREAD_GRAYSCALE)
 
 thres1 = cv2.adaptiveThreshold(image, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 21, 3)
@@ -48,4 +48,4 @@ cv2.imshow('Image', thres1)
 cv2.waitKey(0)
 
 cv2.imshow('Image', thres2)
-cv2.waitKey(0) """
+cv2.waitKey(0)
