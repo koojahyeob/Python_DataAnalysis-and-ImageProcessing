@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 
 # 이미지 크기 변경
-""" image = cv2.imread('cat.jpg')
+image = cv2.imread('cat.jpg')
 cv2.imshow('Image', image)
 cv2.waitKey(0)
 
@@ -22,9 +22,9 @@ cv2.waitKey(0)
 크기 줄이기
 shrink = cv2.resize(image, None, fx=0.7, fy=0.7, interpolation=cv2.INTER_AREA)
 cv2.imshow('Image', shrink)
-cv2.waitKey(0) """
+cv2.waitKey(0)
 "----------------------------------------------------------------------------------"
-""" # 이미지 위치 변경
+# 이미지 위치 변경
 # cv2.warpAffine(image, M, dsize)
 # M : 변환 행렬
 # dsize : Manual Size
@@ -38,9 +38,8 @@ M = np.float32([[1, 0, 200],[0, 1, 10]])
 dst = cv2.warpAffine(image, M, (width, height))
 cv2.imshow('Image', dst)
 cv2.waitKey(0)
- """
 "--------------------------------------------------------------------------------------"
-""" # 이미지 회전
+# 이미지 회전
 # cv2.getRotationMatrix2D(center, angle, scale)
 # center : 회전 중심 // angle : 회전 각도 // scale : Scale Factor
 
@@ -52,4 +51,4 @@ height, width = image.shape[:2]
 M = cv2.getRotationMatrix2D((width/2, height/2), 60, 0.5)
 dst = cv2.warpAffine(image, M, (width, height))
 cv2.imshow('Image', dst)
-cv2.waitKey(0) """
+cv2.waitKey(0)
