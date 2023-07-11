@@ -67,9 +67,9 @@ cv2.circle(image, center, radian, color, thickness)
 
 - 다각형그리기
 cv2.polylines(image, points, is_closed, color, thickness)
-points : 꼭지점들 // is_closed : 닫힌 도형 여부 // thickness : 선의 두께 (채우기 : -1)
+- points : 꼭지점들 // is_closed : 닫힌 도형 여부 // thickness : 선의 두께 (채우기 : -1)
 
 - 텍스트 그리기
 cv2.putText(image, text, position, font_type, font_scale, color)
-position : 텍스트 출력될 위치 // font_type, : 글씨체 // font_scale : 글씨 크기 가중치 
+- position : 텍스트 출력될 위치 // font_type, : 글씨체 // font_scale : 글씨 크기 가중치 
 
