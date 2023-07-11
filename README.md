@@ -51,3 +51,21 @@ NumpyBasic06 (이미지 임계점 처리)
 - ADAPTIVE_tHRESH_MEAN_C : 5BY5로 쪼개서 모든 픽셀 값에 같은 가중치 곱해서 이미지 임계점 처리
 - ADAPTVIE_THRESH_GAUSSIAN_C : 정규 분포 형태로 가운데 부분부터 멀어질 때 가중치는 점점 낮춰서 계산
 
+NumpyBasic07 (이미지 Tracker)
+- tracker 생성함수 cv2.createTrackbar(track_bar name, window_name, value, count, on_change)
+- value : 초기값 // count : max값 (min = 0) // on_change : 값 변경시 호출되는 callback 함수
+
+NumpyBasic08 (도형 그리기)
+- 직선그리기
+- cv2.line(image, start, end, color, thickness) : 하나의 직선을 그리는 함수
+- 사각형 그리기
+- cv2.rectangle(image, start, end, color, thickness)
+- 원 그리기
+- cv2.circle(image, center, radian, color, thickness)
+- 다각형그리기
+- cv2.polylines(image, points, is_closed, color, thickness)
+- points : 꼭지점들 // is_closed : 닫힌 도형 여부 // thickness : 선의 두께 (채우기 : -1)
+- 텍스트 그리기
+- cv2.putText(image, text, position, font_type, font_scale, color)
+- position : 텍스트 출력될 위치 // font_type, : 글씨체 // font_scale : 글씨 크기 가중치 
+
