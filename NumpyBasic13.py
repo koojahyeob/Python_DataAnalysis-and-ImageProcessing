@@ -77,7 +77,7 @@ def check(test, train, train_labels):
 
 train, train_labels = load_train_data(FILE_NAME)
 
-# glob 함수 : ㅏ일들의 리스트를 뽑을 때 사용, 리스트 반환
+# glob 함수 : 파일들의 리스트를 뽑을 때 사용, 리스트 반환
 for file_name in glob.glob('./test_*.png'):
     test = resize20(file_name)
     result = check(test, train, train_labels)
