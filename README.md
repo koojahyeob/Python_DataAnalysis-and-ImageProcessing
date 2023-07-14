@@ -76,12 +76,12 @@ cv2.putText(image, text, position, font_type, font_scale, color)
 NumpyBasic09  (Contours)
 cv2.findContours(image, mode, method) : 이미지에서 Contou들을 찾는 함수
 - mode : Contour들을 찾는 방법
-RETR_EXTERNAL : 바깥쪽 LINE만 찾기
-RETR_LIST : 모든 LINE을 찾미나, HIERARCHY 구성 X (계층)
-RETR_TREE : 모든 LINE을 찾으며, 모든 HIERARCHY 구성 O
+# RETR_EXTERNAL : 바깥쪽 LINE만 찾기
+# RETR_LIST : 모든 LINE을 찾미나, HIERARCHY 구성 X (계층)
+# RETR_TREE : 모든 LINE을 찾으며, 모든 HIERARCHY 구성 O
 - method : Contour들을 찾는 근사치 방법
-CHAIN_APPROX_NONE : 모든 Contour 포인트 저장
-CHAIN_APPROX_SIMPLE : Contour Line을 그릴 수 있는 포인트만 저장
+# CHAIN_APPROX_NONE : 모든 Contour 포인트 저장
+# CHAIN_APPROX_SIMPLE : Contour Line을 그릴 수 있는 포인트만 저장
 
 입력 이미지는 GRAY Scale Threshold 전처리 과정 필요
 
