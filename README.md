@@ -91,13 +91,17 @@ cv2.findContours(image, mode, method) : 이미지에서 Contou들을 찾는 함�
 
 # NumpyBasic10 (Contours 처리)
 cv2.boundingRect(Contour) : Contour를 포함하는 사각형 그리기 
+
 // 사각형의 X,Y 좌표와 너비, 높이를 반환
 
 cv2.convexHull(contour) : Convex Hull 알고리즘으로 외곽을 구하는 함수
+
 // 대략적인 형태의 Contour 외곽을 빠르게 구할 수 있음. ( 단일 Contour 반환 )
 
 cv2.approxPolyDP(curve, epsilon, closed) : 근사치 Contour 구하기
+
 // corve : Contour , epsilon : 최대거리 (클수록 Point 개수 감소) , closed : 폐곡선 여부
+
 
 - Contour의 기본 정보
 cv2.contourArea(contour) : Contour의 면적 구하기
