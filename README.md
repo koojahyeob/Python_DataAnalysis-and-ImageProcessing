@@ -73,3 +73,18 @@ cv2.polylines(image, points, is_closed, color, thickness)
 cv2.putText(image, text, position, font_type, font_scale, color)
 - position : 텍스트 출력될 위치 // font_type, : 글씨체 // font_scale : 글씨 크기 가중치 
 
+NumpyBasic09  (Contours)
+cv2.findContours(image, mode, method) : 이미지에서 Contou들을 찾는 함수
+- mode : Contour들을 찾는 방법
+RETR_EXTERNAL : 바깥쪽 LINE만 찾기
+RETR_LIST : 모든 LINE을 찾미나, HIERARCHY 구성 X (계층)
+RETR_TREE : 모든 LINE을 찾으며, 모든 HIERARCHY 구성 O
+- method : Contour들을 찾는 근사치 방법
+CHAIN_APPROX_NONE : 모든 Contour 포인트 저장
+CHAIN_APPROX_SIMPLE : Contour Line을 그릴 수 있는 포인트만 저장
+
+입력 이미지는 GRAY Scale Threshold 전처리 과정 필요
+
+- Contours 그리기
+- cv2.drawContours(image, contours, contour_index, color, thickness) contour 그리는 함수
+- contour_index : 그리고자 하는 Contours Line ( 전체 : -1 )
